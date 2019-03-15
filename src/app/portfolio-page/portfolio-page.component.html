@@ -1,7 +1,7 @@
 <div class="card-container">
-  <mat-card *ngFor="let card of matCards" class="example-card">
+  <mat-card *ngFor="let card of matCards" class="portfolio-card">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
+      <div mat-card-avatar class="portfolio-header-image"></div>
       <mat-card-title>{{card.title}}</mat-card-title>
       <mat-card-subtitle>{{card.breed}}</mat-card-subtitle>
     </mat-card-header>
@@ -12,8 +12,8 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>{{card.buttonTextOne}}</button>
-      <button mat-button>{{card.buttonTextTwo}}</button>
+      <a mat-button [href]="card.website">{{card.buttonTextOne}}</a>
+      <!-- <button mat-button>{{card.buttonTextTwo}}</button> -->
     </mat-card-actions>
   </mat-card>
 </div>

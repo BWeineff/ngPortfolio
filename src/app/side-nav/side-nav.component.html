@@ -1,0 +1,31 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="false"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="!(isHandset$ | async)"
+      autoFocus="true"
+     >
+    <mat-nav-list>
+      <a mat-list-item routerLinkActive="active-link" routerLink="/home-page">About Me</a>
+      <a mat-list-item routerLinkActive="active-link" routerLink="/portfolio-page">Portfolio Page</a>
+      <a mat-list-item routerLinkActive="active-link" routerLink="/contact-page">Contact Me</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content
+  autoFocus="true">
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Benjamin Weinberger</span>
+    </mat-toolbar>
+    <!-- anything i want to add i put here -->
+    <router-outlet></router-outlet>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

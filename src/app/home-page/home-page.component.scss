@@ -1,0 +1,59 @@
+/* The hero image */
+#hero-image1 {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/canyonimage.jpg");
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#hero-image1 .hero-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3em;
+    line-height: 3em;
+}
+
+#hero-image1 .hero-1.bottom {
+    top: unset;
+    bottom: 0;
+    background-color: rgba(163, 80, 80, 0.5);
+    margin: 0!important;
+}
+
+#hero-image1 .hero-1 ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin: 0;
+    height: 3em;
+    line-height: 3em;
+}
+
+#hero-image1 .hero-1 ul li {
+    list-style: none;
+}
+
+#hero-image1 .hero-1 ul li a {
+    line-height: 3em;
+    height: 3em;
+}
+
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}

@@ -39,11 +39,11 @@ export class ContactPageComponent implements OnInit{
       `;
       let formRequest = { name, email, subject, message, date, html };
       this.af.list('/messages').push(formRequest);
-      let snackBarMessage = 'Your Message was submitted succesfully';
+      let snackBarMessage = 'Your message was submitted succesfully, thank you!';
       let snackBarAction = 'Close'
       const snackBarFunc = (message: string, action: string) => {
         this.snackbar.open(message, action, {
-          duration:850,
+          duration:2050,
         });
       };
       snackBarFunc(snackBarMessage, snackBarAction);

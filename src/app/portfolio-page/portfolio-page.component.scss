@@ -2,15 +2,23 @@
     display: flex;
     flex-flow: wrap;
     justify-content: space-evenly;
-    
-  }
-  .portfolio-card {
+}
+
+.portfolio-card {
     width: 40%;
     margin-bottom: 2em;
-  
-  
-  }
-  .portfolio-header-image {
+}
+
+.portfolio-header-image {
     background-image: url('src/assets/images/code_image.svg');
     background-size: cover;
-  }
+}
+
+mat-card-actions {
+    left: 5px;
+    bottom: 5px;
+    position: absolute;
+}
+.buttonText {
+    color: darksalmon;
+}

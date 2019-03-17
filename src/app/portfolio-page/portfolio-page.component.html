@@ -3,17 +3,17 @@
     <mat-card-header>
       <div mat-card-avatar class="portfolio-header-image"></div>
       <mat-card-title>{{card.title}}</mat-card-title>
-      <mat-card-subtitle>{{card.breed}}</mat-card-subtitle>
+      <mat-card-subtitle>{{card.subtitle}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image [src]="card.imgSrc" alt="Photo of a Shiba Inu">
+    <img mat-card-image [src]="card.imgSrc" alt="Photo representing code project">
     <mat-card-content>
       <p>
         {{card.description}}
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <a mat-button [href]="card.website">{{card.buttonTextOne}}</a>
-      <!-- <button mat-button>{{card.buttonTextTwo}}</button> -->
+      <a class="buttonText" mat-button target="_blank" [href]="card.website">{{card.buttonTextOne}}</a>
+      <a class="buttonText" mat-button target="_blank" [href]="card.projectGit">{{card.buttonTextTwo}}</a>
     </mat-card-actions>
   </mat-card>
 </div>

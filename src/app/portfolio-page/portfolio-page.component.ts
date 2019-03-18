@@ -29,13 +29,13 @@ export class PortfolioPageComponent implements OnInit {
     },
     {
       title: 'Shiba Inu',
-      subtitle: 'Dog Breed',
-      imgSrc: "https://material.angular.io/assets/img/examples/shiba2.jpg",
-      description: `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.`,
-      buttonTextOne: 'LIKE',
-      buttonTextTwo: 'SHARE'
+      subtitle: 'jQuery/GiphyAPI/Bootstrap/AJAX',
+      imgSrc: "assets/images/labs.gif",
+      description: `Giphy API G I F generator.`,
+      buttonTextOne: 'GO TO THE PROJECT',
+      buttonTextTwo: 'GITHUB',
+      website: 'https://bweineff.github.io/ajax6/',
+      projectGit: 'https://github.com/BWeineff/ajax6'
     },
     {
       title: 'Shiba Inu',

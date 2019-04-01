@@ -9,7 +9,7 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "src",
+    "public": "dist/ngPortfolio",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -22,4 +22,4 @@
       }
     ]
   }
- }
+}

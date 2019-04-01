@@ -8,6 +8,7 @@ import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
 
 const appRoutes: Routes = [
+  { path: '', redirectTo: 'home-page', pathMatch: 'full' },
   { path: 'home-page', component: HomePageComponent },
   { path: 'portfolio-page', component: PortfolioPageComponent },
   { path: 'contact-page', component: ContactPageComponent }

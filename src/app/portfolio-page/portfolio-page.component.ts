@@ -28,7 +28,7 @@ export class PortfolioPageComponent implements OnInit {
       projectGit: 'https://github.com/BWeineff/TriviaGame',
     },
     {
-      title: 'Shiba Inu',
+      title: 'Cartoon GIF Generator',
       subtitle: 'jQuery/GiphyAPI/Bootstrap/AJAX',
       imgSrc: "assets/images/labs.gif",
       description: `Giphy API G I F generator.`,
@@ -45,7 +45,9 @@ export class PortfolioPageComponent implements OnInit {
       A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
       bred for hunting.`,
       buttonTextOne: 'LIKE',
-      buttonTextTwo: 'SHARE'
+      buttonTextTwo: 'SHARE',
+      website: 'https://bweineff.github.ioBLABLABLA',
+      projectGit: 'https://github.com/BLABLABLA'
     },
     {
       title: 'Shiba Inu',
